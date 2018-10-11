@@ -1,13 +1,13 @@
 import math
-a = 1
-s = 0
-x = math.sqrt(a)
-x_n  = 1/2*(x+a/x) 
-while a >= 10**(-4):    
-    s += x_n
-    x += Math.sqrt(a)
-    x_n  = 1/2*(x+a/x)    
-print('s = ', s)
-print('a_n = %2.7f' % a)
-print('kilkist iteracii = ', n)
+a = int(input('a='))
+x1 = int(input('x1='))
+x_n = x1
+x_n1  = 1/2*(x+a/x)
+k = 1
+while abs(x_n1-x_n) >= 10**(-4):    
+    k += 1
+   print('x{} = {}'.format(k,n_n1))
+    x_n = x_n1   
+    x_n1  = 1/2*(x+a/x)
+ print('sqrt(a) = x{} = {}'.format(k+1,n_n1))
     
