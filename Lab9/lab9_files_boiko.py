@@ -24,7 +24,9 @@ i = input("Введіть нову букву: ")
 save_path = 'C:/lab9/Boiko/'
 na = os.path.join(save_path,"42.txt")
 with open(nam) as inp, open(na, "w+",encoding="utf-8") as out:
-    a = inp.readline()
-    for el in a.replace('.','\n' + i):
-        print(el)
+    for el in inp :
+        n=el.find(i)
+        if (n!=-1):
+          out.write(el)
 handle.close
+
